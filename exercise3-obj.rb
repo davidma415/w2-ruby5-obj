@@ -32,9 +32,21 @@ class Player
   def level_up
     @lives += 1
   end
+
+  def collect_treasure
+    @gold_coins += 1
+    if (@gold_coins % 10) == 0
+      level_up
+    end
+  end
 end
 
 player1 = Player.new
 puts "Player 1 has #{player1.lives} lives before leveling up"
 player1.level_up
 puts "Player 1 has #{player1.lives} lives after leveling up"
+
+30.times do
+  player1.collect_treasure
+end
+puts "Player 1 has #{player1.lives} after collecting treasure"
