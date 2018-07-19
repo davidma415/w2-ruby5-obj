@@ -19,6 +19,5 @@ venues = [
 { address: "10 Spruce Avenue Ouest", city: "Montreal", wheelchair_accessible: false, capacity: 525 }
 ]
 
-
-venues = venue_search(venues)
-puts venues
+event_venues = venue_search(venues)
+puts event_venues
