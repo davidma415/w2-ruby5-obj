@@ -52,7 +52,7 @@ class Paperboy
 end
 
 bob = Paperboy.new("Bob")
-bob.deliver(101, 160)
+bob.deliver(1, 160)
 bob.report
 bob.deliver(1, 75)
 bob.report
